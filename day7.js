@@ -486,7 +486,10 @@ const data = [
 // 3. Wyświetl same temperatury stacji, które zarejestrowały ciśnienie powyżej 1030.
 
 const result = data.filter(item => Object.values(item).includes(null)).map(item => item.stacja);
+console.log(result)
 
 const result2 = data.map(item => parseInt(item.predkosc_wiatru)).reduce((acc, ce) => acc + ce) / data.length;
+console.log(result2)
 
 const result3 = data.filter(item => parseInt(item.cisnienie) > 1030).map(item => [item.stacja, item.cisnienie].join(', '));
+console.log(result3)
