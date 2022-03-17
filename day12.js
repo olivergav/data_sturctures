@@ -75,11 +75,12 @@ const games = [{
 // 3. Wyświetl tytuły, które nie są z gatunku "RPG" i powstały po 2015 roku.
 
 const result = games.filter(game => game.studio.startsWith('G')).map(game => [game.title, game.studio].join(', '));
-console.log(result);
+// console.log(result);
 
 const result2 = games.filter(game => game.platforms.length >= 2).map(game => [game.title, game.studio].join(', '));
-console.log(result2);
+// console.log(result2);
 
 const restult3 = games.filter(game => !game.genre.includes('RPG') && game.year > 2015).map(game => [game.title, game.studio].join(', '))
-console.log(restult3);
+// console.log(restult3);
+
 
